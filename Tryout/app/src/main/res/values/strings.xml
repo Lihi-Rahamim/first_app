@@ -3,4 +3,8 @@
     <string name="hi_dubi">Hi Dubi!</string>
     <string name="appwidget_text">EXAMPLE</string>
     <string name="add_widget">Add widget</string>
+    <string name="add">add</string>
+    <string name="sub">sub</string>
+    <string name="reset">reset</string>
+    <string name="star">Star</string>
 </resources>

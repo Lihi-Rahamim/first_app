@@ -1,21 +1,47 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/appWidgetBackgroundColor"
+    android:background="#1D886F"
+    android:baselineAligned="false"
+    android:fitsSystemWindows="false"
     android:padding="@dimen/widget_margin"
-    android:theme="@style/ThemeOverlay.Tryout.AppWidgetContainer">
+    android:theme="@style/Theme.Tryout"
+    android:visibility="visible"
+    app:layoutDescription="@xml/new_app_widget_scene">
 
-    <TextView
-        android:id="@+id/appwidget_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="8dp"
-        android:background="?attr/appWidgetBackgroundColor"
-        android:contentDescription="@string/appwidget_text"
-        android:text="@string/appwidget_text"
-        android:textColor="?attr/appWidgetTextColor"
-        android:textSize="24sp"
-        android:textStyle="bold|italic" />
-</RelativeLayout>
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="131dp"
+        android:layout_height="139dp"
+        android:text="@string/add"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="130dp"
+        android:layout_height="139dp"
+        android:text="@string/sub"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="151dp"
+        android:layout_height="139dp"
+        android:background="@color/purple_500"
+        android:text="@string/reset"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="139dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/star"
+        app:srcCompat="@drawable/star_1" />
+
+</LinearLayout>
